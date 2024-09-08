@@ -1,0 +1,19 @@
+# Taken from: https://community.home-assistant.io/t/sharing-your-configuration-on-github/195144
+
+# An * ensures that everything will be ignored by default.
+*
+
+# Allowlist specific files/folders with !; these will not be ignored.
+!*.yaml
+!.gitignore
+!*.md
+
+# Ignore folders
+.storage
+.cloud
+.google.token
+
+# Ensure these YAML files are ignored, otherwise your secret data/credentials will leak
+ip_bans.yaml
+secrets.yaml
+known_devices.yaml
